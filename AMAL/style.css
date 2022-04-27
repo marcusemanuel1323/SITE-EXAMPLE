@@ -1,0 +1,460 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.nav a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo a{
+    text-decoration: none;
+    color: #fff;
+}
+
+li{
+    list-style: none;
+    color: #fff;
+}
+
+body{
+    background-color: #f08e80;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    color: #fff;
+}
+
+.nav{
+    display: flex;
+    font-size: calc((1.2 - 1) * 1.2vw + 1rem);
+    gap: 20px;
+}
+
+
+.logo{
+    font-size: calc((2 - 1) * 1.2vw + 1rem);;
+}
+
+
+.fale-comigo button{
+    
+    font-size: calc((1 - 1) * 1.2vw + 1rem);
+    color: #f08e80;
+    background-color: #fff;
+    border: none;
+    position: relative;
+    display: inline-block;
+    line-height: normal;
+    padding: 0.88em 1.4696em;
+}
+
+.principal{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 90px;
+}
+
+.titulo{
+    text-align: left;
+    font-size: 3.2vw;
+    color: #fff;
+
+}
+
+.missao{
+    display: flex;
+    justify-content: center;
+    gap: 310px;
+    color: #fff;
+    flex-wrap: wrap;
+}
+
+.missao-titulo{
+    font-size: 25px;
+}
+
+.missao-sobre{
+    width: 480px;
+    font-size: 20px;
+    text-align: left;
+    display: flex;
+    
+}
+
+
+.spec{
+    display: flex;
+    justify-content: center;
+    gap: 310px;
+    padding-bottom: 80px;
+    color: #fff;
+    flex-wrap: wrap;
+}
+
+.spec-titulo{
+    font-size: 25px;
+}
+
+.spec-conteudo{
+    font-size: calc((1.2 - 1) * 1.2vw + 1rem);
+    display: flex;
+    gap: 50px;
+}
+
+.spec1 p{
+    padding: 10px;
+}
+
+.spec2 p{
+    padding: 10px;
+}
+
+.background-sobre{
+    padding: 90px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    gap: 180px;
+}
+
+.sobre-titulo{
+    font-size: 25px;
+    width: 30.4vw;
+}
+
+.sobre-textos{
+    width: 438px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.texto{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.texto-h1{
+    font-size: 20px;
+}
+
+.texto-h2{
+    font-size: 15px;
+}
+
+.texto-h3{
+    font-size: 13px;
+}
+
+.background-sobre2{
+    padding: 90px;
+    background-color: #ffffffc2;
+    display: flex;
+    gap: 180px;
+    justify-content: center;
+}
+
+.sobre-titulo2{
+    font-size: 25px;
+    width: 30.4vw;
+}
+
+.sobre-textos2{
+    width: 438px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.texto2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
+.texto2-h1{
+    font-size: 20px;
+}
+
+.texto2-h2{
+    font-size: 15px;
+}
+
+.texto2-h3{
+    font-size: 13px;
+}
+
+.footer{
+    background: black;
+    color: white;
+    padding: 56px 80px 60px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 45px;
+}
+
+.imagem-footer{
+    display: flex;
+    gap: 12px;
+}
+
+.imagem-footer a ion-icon{
+    width: 20px;
+    height: 20px;
+    color: white;
+}
+
+.footer-txt{
+    font-size: 18px;
+}
+
+.footer-txt p a{
+    color: #f08e80;
+}
+
+#menu-mobile{
+    display: none;
+}
+
+#menu-mobile i{
+    cursor: pointer;
+    font-size: 30px;
+}
+
+#menu-mobile ul{
+    background-color: #f1a79c;
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 37px;
+    text-align: center;
+    
+}
+
+#menu-mobile ul a{
+    text-decoration: none;
+    font-size: 17px;
+    padding: 10px 0;
+    display: block;
+}
+
+#btn-mobile ion-icon{
+    color: black;
+}
+
+
+
+
+@media screen and (max-width: 1068px){
+    
+    .principal{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .missao{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin: 0;
+    }
+
+    .spec{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .titulo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    .missao-sobre{
+       width: 400px;
+    }
+}
+
+@media screen and (max-width: 514px){
+    
+    .spec{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .spec-conteudo{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 508px){
+
+    .missao-sobre{
+       width: 320px;
+    }
+}
+
+@media screen and (max-width: 474px){
+
+    .missao-sobre{
+        width: 300px;
+     }
+}
+
+@media screen and (max-width: 414px){
+
+    #menu-mobile{
+        display: block;
+        position: fixed;
+        right: 0;
+    }
+
+
+    .active #menu{
+        display: block;
+        width: 30%;
+        position: fixed;
+        background-color: rgba(0, 0, 0, .5);
+        height: 90px;
+    }
+
+
+    .nav{
+        display: none;
+    }
+
+    .fale-comigo{
+        display: none;
+    }
+
+
+    .missao-titulo{
+        font-size: 10px;
+    }
+
+    .missao-sobre{
+        width: 250px;
+        font-size: 8px;
+     }
+
+    .spec-titulo{
+        font-size: 10px;
+    }
+
+    .background-sobre{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .sobre-textos{
+        width: 200px;
+        gap: 60px;
+    }
+    
+    .background-sobre2{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .sobre-textos2{
+        width: 200px;
+        gap: 60px;
+    }
+
+}
+
+@media screen and (max-width: 364px){
+
+
+    .sobre-titulo{
+        font-size: 20px;
+    }
+
+    .sobre-textos{
+        width: 150px;
+    }
+
+    .texto-h1{
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .texto-h2{
+        font-size: 12px;
+    }
+
+    .texto-h3{
+        font-size: 10px;
+
+    }
+
+    .sobre-titulo2{
+        font-size: 20px;
+    }
+
+    .sobre-textos2{
+        width: 150px;
+    }
+
+    .texto2-h1{
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .texto2-h2{
+        font-size: 12px;
+    }
+
+    .texto2-h3{
+        font-size: 10px;
+
+    }
+}
+
+@media screen and (max-width: 312px){
+
+    .sobre-textos{
+        width: 120px;
+    }
+    .sobre-textos2{
+        width: 120px;
+    }
+}
+
+@media screen and (max-width: 280px){
+
+    .sobre-textos{
+        width: 80px;
+    }
+    .sobre-textos2{
+        width: 80px;
+    }
+}
+
